@@ -14,7 +14,7 @@ namespace ClinicaOdontologica
 
         [Key]
         [Column("id_especialidad")]
-        public int idEspecialidad { get; set; }
+        public int IdEspecialidad { get; set; }
 
 
         [Column("descripcion"), MaxLength(200), Required]
