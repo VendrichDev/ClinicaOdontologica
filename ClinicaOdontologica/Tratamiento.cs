@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ClinicaOdontologica
 {
     [Table("tratamientos")]
-    internal class Tratamiento
+    public class Tratamiento
     {
 
         [Key]

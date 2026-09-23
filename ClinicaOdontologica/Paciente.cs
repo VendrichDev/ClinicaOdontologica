@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ClinicaOdontologica
 {
     [Table("pacientes")]
-    internal class Paciente
+    public class Paciente
     {
 
         [Key]
@@ -30,7 +30,7 @@ namespace ClinicaOdontologica
 
 
         [Column("fecha_nacimiento"), Required]
-        public DateTime FechaNacimiento { get; set; }
+        public DateOnly FechaNacimiento { get; set; }
 
 
         [Column("email"), EmailAddress, Required, MaxLength(100)]
