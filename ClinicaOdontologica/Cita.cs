@@ -18,7 +18,7 @@ namespace ClinicaOdontologica
 
 
         [Column("fecha_cita"), Required]
-        public DateOnly FechaCita { get; set; }
+        public DateTime FechaCita { get; set; }
 
 
         [Column("motivo"), MaxLength(200), Required]

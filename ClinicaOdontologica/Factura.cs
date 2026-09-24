@@ -19,7 +19,7 @@ namespace ClinicaOdontologica
 
 
         [Column("fecha_emision"), Required]
-        public DateOnly FechaEmision { get; set; }
+        public DateTime FechaEmision { get; set; }
 
 
 
