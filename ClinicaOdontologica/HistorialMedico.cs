@@ -37,7 +37,9 @@ namespace ClinicaOdontologica
         public string EnfermedadesPrevias { get; set; }
 
 
+        // RELACIONES
 
+        //Paciente Pacientes { get; set; } = new Paciente();
 
     }
 }

@@ -11,13 +11,13 @@ namespace ClinicaOdontologica
     [Table("consultorios")]
     public class Consultorio
     {
-
+        // Primary Key
         [Key]
         [Column("id_consultorio")]
         public int IdConsultorio { get; set; }
 
 
-
+        // Campos
         [Column("numero_sala"), MaxLength(10), Required]
         public string NumeroSala { get; set; }
 
@@ -29,6 +29,10 @@ namespace ClinicaOdontologica
         [Column("equipamiento_principal"), MaxLength(100), Required]
         public string EquipamientoPrincipal { get; set; }
 
+
+        // Relaciones
+
+        List<Cita> Citas { get; set; } = new List<Cita>();
 
     }
 }

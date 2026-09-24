@@ -12,11 +12,14 @@ namespace ClinicaOdontologica
     public class Cita
     {
 
+        // Primary Key
         [Key]
         [Column("id_cita")]
         public int IdCita { get; set; }
 
 
+
+        // Campos
         [Column("fecha_cita"), Required]
         public DateTime FechaCita { get; set; }
 
@@ -29,6 +32,8 @@ namespace ClinicaOdontologica
         public string EstadoCita { get; set; }
 
 
+
+        // Foreing Keys
 
         [ForeignKey("Paciente")]
         [Column("id_paciente")]
@@ -47,5 +52,13 @@ namespace ClinicaOdontologica
         public int IdConsultorio { get; set; }
         public Consultorio? Consultorio { get; set; }
 
+
+        // RELACIONES
+
+
+        List<DetalleCita> DetallesCitas { get; set; } = new List<DetalleCita>();
+        List<Receta> Recetas { get; set; } = new List<Receta>();
+
+        //Factura Facturas { get; set; } = new Factura();
     }
 }

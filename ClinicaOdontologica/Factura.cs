@@ -46,7 +46,9 @@ namespace ClinicaOdontologica
         public int IdCita { get; set; }
         public Cita? Cita { get; set; }
 
+        // RELACIONES
 
+        //Factura Facturas { get; set; } = new Factura();
 
     }
 }

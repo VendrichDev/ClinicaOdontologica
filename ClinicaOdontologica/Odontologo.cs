@@ -36,5 +36,10 @@ namespace ClinicaOdontologica
         public string Apellido { get; set; }
 
 
+        // Relaciones
+
+        //Especialidad Especialidades { get; set; } = new Especialidad();
+        List<Cita> Citas { get; set; } = new List<Cita>();
+
     }
 }

@@ -37,5 +37,11 @@ namespace ClinicaOdontologica
         public int IdTratamiento { get; set; }
         public Tratamiento? Tratamiento { get; set; }
 
+
+        // relaciones 
+
+        //Tratamiento Tratamientos { get; set; } = new Tratamiento();
+        //Cita Citas { get; set; } = new Cita();
+
     }
 }

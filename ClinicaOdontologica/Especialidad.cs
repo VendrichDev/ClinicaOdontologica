@@ -11,11 +11,13 @@ namespace ClinicaOdontologica
     [Table("especialidades")]
     public class Especialidad
     {
-
+        // Primary key
         [Key]
         [Column("id_especialidad")]
         public int IdEspecialidad { get; set; }
 
+
+        //  CAMPOS
 
         [Column("descripcion"), MaxLength(200), Required]
         public string Descripcion { get; set; }
@@ -23,5 +25,11 @@ namespace ClinicaOdontologica
 
         [Column("nombre_especialidad"), MaxLength(50), Required]
         public string NombreEspecialidad { get; set; }
+
+
+        // RELACIONES
+        List<Odontologo> Odontologos { get; set; } = new List<Odontologo>();
+
+
     }
 }
