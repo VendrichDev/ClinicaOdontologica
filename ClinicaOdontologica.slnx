@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="ClinicaOdontologica.API/ClinicaOdontologica.API.csproj" Id="e97c8513-c1aa-4757-a517-3220f51d642b" />
-  <Project Path="ClinicaOdontologica/ClinicaOdontologica.Models.csproj" />
+  <Project Path="ClinicaOdontologica/ClinicaOdontologica.csproj" />
 </Solution>
