@@ -20,15 +20,15 @@ namespace ClinicaOdontologica
 
 
         // Campos
-        [Column("fecha_cita"), Required]
+        [Column("fecha_cita", TypeName = "date"), Required]
         public DateTime FechaCita { get; set; }
 
 
-        [Column("motivo"), MaxLength(200), Required]
+        [Column("motivo", TypeName = "varchar(200)"), MaxLength(200), Required]
         public string Motivo { get; set; }
 
 
-        [Column("estado_cita"), MaxLength(20), Required]
+        [Column("estado_cita", TypeName = "varchar(20)"), MaxLength(20), Required]
         public string EstadoCita { get; set; }
 
 

@@ -17,7 +17,7 @@ namespace ClinicaOdontologica
         public int IdTratamiento { get; set; }
 
 
-        [Column("nombre_tratamiento"), MaxLength(100), Required]
+        [Column("nombre_tratamiento", TypeName = "varchar(100)"), MaxLength(100), Required]
         public string NombreTratamiento { get; set; }
 
         [Column("costo_base", TypeName = "numeric(10, 2)"), Required]

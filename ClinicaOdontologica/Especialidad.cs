@@ -19,11 +19,11 @@ namespace ClinicaOdontologica
 
         //  CAMPOS
 
-        [Column("descripcion"), MaxLength(200), Required]
+        [Column("descripcion", TypeName = "varchar(200)"), MaxLength(200), Required]
         public string Descripcion { get; set; }
 
 
-        [Column("nombre_especialidad"), MaxLength(50), Required]
+        [Column("nombre_especialidad", TypeName = "varchar(50)"), MaxLength(50), Required]
         public string NombreEspecialidad { get; set; }
 
 

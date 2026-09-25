@@ -21,7 +21,7 @@ namespace ClinicaOdontologica
         [Column("costo_aplicado", TypeName = "numeric(10,2)"), Required]
         public decimal CostoAplicado { get; set; }
 
-        [Column("observaciones"), MaxLength(200), Required]
+        [Column("observaciones", TypeName = "varchar(200)"), MaxLength(200), Required]
         public string Observaciones { get; set; }
 
 

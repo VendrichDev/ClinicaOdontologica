@@ -17,7 +17,7 @@ namespace ClinicaOdontologica
         public int IdReceta { get; set; }
 
 
-        [Column("fecha_emision"), Required]
+        [Column("fecha_emision", TypeName = "timestamp"), Required]
         public DateTime FechaEmision { get; set; }
 
 

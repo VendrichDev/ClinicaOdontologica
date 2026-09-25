@@ -18,7 +18,7 @@ namespace ClinicaOdontologica
 
 
 
-        [Column("fecha_emision"), Required]
+        [Column("fecha_emision", TypeName = "timestamp"), Required]
         public DateTime FechaEmision { get; set; }
 
 

@@ -18,7 +18,7 @@ namespace ClinicaOdontologica
 
 
         // Campos
-        [Column("numero_sala"), MaxLength(10), Required]
+        [Column("numero_sala", TypeName = "varchar(10)"), MaxLength(10), Required]
         public string NumeroSala { get; set; }
 
 
@@ -26,7 +26,7 @@ namespace ClinicaOdontologica
         public int Piso { get; set; }
 
 
-        [Column("equipamiento_principal"), MaxLength(100), Required]
+        [Column("equipamiento_principal", TypeName = "varchar(100)"), MaxLength(100), Required]
         public string EquipamientoPrincipal { get; set; }
 
 

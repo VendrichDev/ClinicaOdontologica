@@ -25,15 +25,15 @@ namespace ClinicaOdontologica
         public Paciente? Paciente { get; set; }
 
 
-        [Column("tipo_sangre"), MaxLength(5)]
+        [Column("tipo_sangre", TypeName = "varchar(5)"), MaxLength(5)]
         public string TipoSangre { get; set; }
 
 
-        [Column("alergias"), MaxLength(200)]
+        [Column("alergias", TypeName = "varchar(200)"), MaxLength(200)]
         public string Alergias { get; set; }
 
 
-        [Column("enfermedades_previas"), MaxLength(200)]
+        [Column("enfermedades_previas", TypeName = "varchar(200)"), MaxLength(200)]
         public string EnfermedadesPrevias { get; set; }
 
 

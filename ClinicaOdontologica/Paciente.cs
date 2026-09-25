@@ -17,27 +17,27 @@ namespace ClinicaOdontologica
         public int IdPaciente { get; set; }
 
 
-        [Column("dni"), MaxLength(10), Required]
+        [Column("dni", TypeName = "varchar(10)"), MaxLength(10), Required]
         public string Dni { get; set; }
 
 
-        [Column("nombres"), MaxLength(50), Required]
+        [Column("nombres", TypeName = "varchar(50)"), MaxLength(50), Required]
         public string Nombres { get; set; }
 
 
-        [Column("apellidos"), MaxLength(50), Required]
+        [Column("apellidos", TypeName = "varchar(50)"), MaxLength(50), Required]
         public string Apellidos { get; set; }
 
 
-        [Column("fecha_nacimiento"), Required]
+        [Column("fecha_nacimiento", TypeName = "date"), Required]
         public DateOnly FechaNacimiento { get; set; }
 
 
-        [Column("email"), EmailAddress, Required, MaxLength(100)]
+        [Column("email", TypeName = "varchar(100)"), EmailAddress, Required, MaxLength(100)]
         public string Email { get; set; }
 
 
-        [Column("telefono"), Phone, MaxLength(15), Required]
+        [Column("telefono", TypeName = "varchar(15)"), Phone, MaxLength(15), Required]
         public string Telefono { get; set; }
 
         // Relaciones

@@ -25,14 +25,14 @@ namespace ClinicaOdontologica
         public Especialidad? Especialidad { get; set; }
 
 
-        [Column("registro_medico"), MaxLength(20), Required]
+        [Column("registro_medico", TypeName = "varchar(20)"), MaxLength(20), Required]
         public string RegistroMedico { get; set; }
 
 
-        [Column("nombre"), MaxLength(50), Required]
+        [Column("nombre", TypeName = "varchar(50)"), MaxLength(50), Required]
         public string Nombre { get; set; }
 
-        [Column("apellido"), MaxLength(50), Required]
+        [Column("apellido", TypeName = "varchar(50)"), MaxLength(50), Required]
         public string Apellido { get; set; }
 
 
