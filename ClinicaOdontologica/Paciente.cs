@@ -41,7 +41,7 @@ namespace ClinicaOdontologica
         public string Telefono { get; set; }
 
         // Relaciones
-        List<Cita> Citas { get; set; } = new List<Cita>();
+        public List<Cita>? Citas { get; set; } = new List<Cita>();
 
         //HistorialMedico HistorialesPaciente { get; set; } = new HistorialMedico();
 

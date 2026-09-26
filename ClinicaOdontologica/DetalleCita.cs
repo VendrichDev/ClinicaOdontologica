@@ -40,8 +40,7 @@ namespace ClinicaOdontologica
 
         // relaciones 
 
-        //Tratamiento Tratamientos { get; set; } = new Tratamiento();
-        //Cita Citas { get; set; } = new Cita();
+
 
     }
 }

@@ -32,7 +32,7 @@ namespace ClinicaOdontologica
 
         // Relaciones
 
-        List<Cita> Citas { get; set; } = new List<Cita>();
+        public List<Cita>? Citas { get; set; } = new List<Cita>();
 
     }
 }

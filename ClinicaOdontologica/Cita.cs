@@ -56,9 +56,8 @@ namespace ClinicaOdontologica
         // RELACIONES
 
 
-        List<DetalleCita> DetallesCitas { get; set; } = new List<DetalleCita>();
-        List<Receta> Recetas { get; set; } = new List<Receta>();
+        public List<DetalleCita>? DetallesCitas { get; set; } = new List<DetalleCita>();
+        public List<Receta>? Recetas { get; set; } = new List<Receta>();
 
-        //Factura Facturas { get; set; } = new Factura();
     }
 }

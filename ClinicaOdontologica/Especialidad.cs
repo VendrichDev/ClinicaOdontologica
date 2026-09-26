@@ -28,7 +28,7 @@ namespace ClinicaOdontologica
 
 
         // RELACIONES
-        List<Odontologo> Odontologos { get; set; } = new List<Odontologo>();
+        public List<Odontologo>? Odontologos { get; set; } = new List<Odontologo>();
 
 
     }

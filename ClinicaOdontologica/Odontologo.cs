@@ -39,7 +39,7 @@ namespace ClinicaOdontologica
         // Relaciones
 
         //Especialidad Especialidades { get; set; } = new Especialidad();
-        List<Cita> Citas { get; set; } = new List<Cita>();
+        public List<Cita>? Citas { get; set; } = new List<Cita>();
 
     }
 }

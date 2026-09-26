@@ -48,7 +48,6 @@ namespace ClinicaOdontologica
 
         // RELACIONES
 
-        //Factura Facturas { get; set; } = new Factura();
 
     }
 }
